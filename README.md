@@ -14,13 +14,12 @@
 
 # **1. Selected Research Paper**
 
-**Title:** *Add-ViT: CNN–Transformer Hybrid Architecture for Small Data Paradigm Processing*
-**Authors:** Zheng Liu et al.
-**Journal:** Neural Processing Letters (Springer)
-**Publication Year:** **2024**
-**Peer-reviewed:** ✔ Yes
-**Link:** [https://link.springer.com/article/10.1007/s11063-024-11643-8](https://link.springer.com/article/10.1007/s11063-024-11643-8)
-**Local PDF:** See `Add-ViT.pdf` (optional)
+**Title:** *Add-ViT: CNN–Transformer Hybrid Architecture for Small Data Paradigm Processing*  
+**Authors:** Zheng Liu et al.  
+**Journal:** Neural Processing Letters (Springer)  
+**Publication Year:** **2024**  
+**Peer-reviewed:**  Yes  
+**Link:** https://link.springer.com/article/10.1007/s11063-024-11643-8  
 
 This paper proposes **Add-ViT**, a hybrid convolution + Vision Transformer architecture specifically designed to improve performance on **small datasets**, especially **CIFAR-10** and **CIFAR-100**.
 
