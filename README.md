@@ -1,4 +1,4 @@
-# **Add-ViT (2024) – Reproduction of Vision Transformer Baseline on CIFAR-10**
+# **Add-ViT (2024) – Reproduction of Vision Transformer Baseline on CIFAR-10 and CIFAR-100**
 
 **Deep Learning – Project Part 1 Submission**
 
