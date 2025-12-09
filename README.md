@@ -158,7 +158,8 @@ This demonstrates strong performance on small datasets and supports the Add-ViT 
 | **Learning Rate** | 3e-4 |
 | **Weight Decay** | 0.05 |
 
-
+### **Final Result**
+- **Best Validation Accuracy:** **84.38%**
 ---
 
 
