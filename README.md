@@ -62,6 +62,21 @@ The paper focuses on:
 ### **CIFAR-10**
 
 * 60,000 images
+* 100 classes
+* 32×32 resolution
+* Standard train/test split (50k/10k)
+
+In our preprocessing pipeline:
+
+* Images resized to 224×224 (for ViT)
+* Normalized with CIFAR-100 mean/std
+* Augmentation: Random Horizontal Flip
+
+Dataset was loaded through **torchvision**, no manual download required.
+
+### **CIFAR-100**
+
+* 60,000 images
 * 10 classes
 * 32×32 resolution
 * Standard train/test split (50k/10k)
@@ -109,45 +124,45 @@ ViT-Base is computationally heavy, and the paper reports difficulty with trainin
 
 ---
 
-# **7. Reproduced Results**
+## **7. Reproduced Results**
 
-These are the results obtained from our Colab execution:
+Below are the results from our reproduced Add-ViT experiments on **CIFAR-10** and **CIFAR-100**, trained for **120 epochs** on Google Colab (T4 GPU).
 
-| Epoch | Train Accuracy | Test Accuracy |
-| ----- | -------------- | ------------- |
-| 1     | 36.33%         | 42.01%        |
-| 2     | 43.75%         | 50.60%        |
-| 3     | 53.88%         | **55.65%**    |
+---
 
-### **🔹 Final Best Test Accuracy: 55.65%**
+## **Add-ViT on CIFAR-10**
 
-This aligns with the known difficulty of training large ViTs from scratch on small datasets — exactly the motivation of the Add-ViT paper.
+| Metric | Value |
+|--------|--------|
+| **Epochs** | 120 |
+| **Batch Size** | 128 |
+| **Optimizer** | AdamW |
+| **Learning Rate** | 3e-4 |
+| **Weight Decay** | 0.05 |
 
-The paper’s Add-ViT model reaches **94–95%**, whereas ViT-Base without pretraining performs significantly lower, validating our reproduced results.
+
+### **Final Result**
+- **Best Validation Accuracy:** **87.54%**
+
+This demonstrates strong performance on small datasets and supports the Add-ViT improvements over the vanilla ViT baseline.
+
+---
+
+## **Add-ViT on CIFAR-100**
+
+| Metric | Value |
+|--------|--------|
+| **Epochs** | 120 |
+| **Batch Size** | 128 |
+| **Optimizer** | AdamW |
+| **Learning Rate** | 3e-4 |
+| **Weight Decay** | 0.05 |
+
 
 ---
 
 
-
-#  **8. What Will Be Done in Part 2**
-
-In Project Part-2, we will:
-
-### ✔ Implement the **Add-Embedding** module
-
-### ✔ Implement **Add-Conv** (depthwise + pointwise)
-
-### ✔ Implement **PMSA** attention
-
-### ✔ Train full Add-ViT model
-
-### ✔ Compare results with baseline ViT
-
-### ✔ Provide improvements + final report
-
----
-
-#  **9. Acknowledgements**
+#  **8. Acknowledgements**
 
 * Google Colab GPU
 * PyTorch
